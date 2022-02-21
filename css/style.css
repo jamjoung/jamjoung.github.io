@@ -41,14 +41,6 @@ h2, h3, h4 {
     color: #022B3A;
 }
 
-a:link {
-    color: #71697A;
-}
-
-a:hover {
-    color: #635068;
-}
-
 .navbarSection a:link{
     color:white;
 }
@@ -60,10 +52,8 @@ a:hover {
 
 .button {
     background-color: #71697A; 
-    border: none;
     color: white;
     text-align: center;
-    text-decoration: none;
     font-size: 16px;
     border-radius: 9px;
     margin: 20px;
@@ -73,5 +63,6 @@ a:hover {
   .button:hover {
     background-color: #635068;
     color: white;
+
 }
 
