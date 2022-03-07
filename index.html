@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
     <head> 
-      <meta charset="utf-8">
+      <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+      
       <title>Jamie Joung</title>
       <link href="css/style.css" rel="stylesheet" type="text/css" />
-    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="preconnect" href="https://fonts.googleapis.com"> 
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
       <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Oswald&display=swap" rel="stylesheet">
     </head>
+    
       <body>
-        <div>
-          <ul class="navbar">
-            <li class="navbarSection"><a href="index.html">Home</a></li>
-            <li class="navbarSection"><a href="assignments/assignment1.html">Assignment 1</a></li>
-            <li class="navbarSection"><a href="assignments/assignment3.html">Assignment 3 - Encyclopedia</a></li>
-            <li class="navbarSection"><a href="assignments/assignment4.html">Assignment 4 - Challenges</a></li>
-            <li class="navbarSection"><a href="assignments/assignment5.html">Assignment 5 - Challenges Updated</a></li>
-          </ul>
+        <div class="navbar" id="topNavbar">
+          <a href="index.html" class="active">Home</a>
+          <a href="assignments/assignment1.html">Assignment 1</a>
+          <a href="assignments/assignment3.html">Assignment 3</a>
+          <a href="assignments/assignment4.html">Assignment 4</a>
+          <a href="assignments/assignment5.html">Assignment 5</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
 
       <section id="about">
@@ -35,4 +38,5 @@
       </section>
 
       </body>
+      <script type="text/javascript" src="javascript/myscript.js"></script>
 </html>

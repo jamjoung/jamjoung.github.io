@@ -20,16 +20,33 @@ hr {
 }
 
 .navbar {
-    list-style-type: none; 
     margin: 0; 
     padding: 0; 
     background-color: #635068; 
     overflow: hidden;
-}
-
-.navbarSection {
     font-family:'Noto Serif', serif;
 }
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+
+
+
+.navbar a:hover{
+    background-color: white;
+    color: #71697A;
+}
+
+.navbar .icon {
+    display: none;
+  }
 
 h1 {
     font-family:'Noto Serif', serif;
@@ -41,19 +58,18 @@ h2, h3, h4 {
     color: #022B3A;
 }
 
-.navbarSection a:link{
-    color:white;
+#about {
+    display: flex;
+    flex-direction: column;
 }
 
-.navbarSection a:hover{
-    background-color: white;
-    color: #71697A;
-}
+
 
 .button {
     background-color: #71697A; 
     color: white;
     text-align: center;
+    width:250px;
     font-size: 16px;
     border-radius: 9px;
     margin: 20px;
@@ -67,25 +83,30 @@ h2, h3, h4 {
 }
 
 /* Referenced from W3 Schools */
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
+@media screen and (max-width: 400px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
       float: right;
       display: block;
     }
   }
 
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
+  @media screen and (max-width: 400px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive a.icon {
       position: absolute;
       right: 0;
       top: 0;
     }
-    .topnav.responsive a {
+    .navbar.responsive a {
       float: none;
-      display: block;
+      display: flex;
       text-align: left;
     }
   }
 
+  @media screen and (max-width: 400px) {
+    .button {
+      width:auto;
+    }
+  }
