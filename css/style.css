@@ -12,6 +12,14 @@ a {
     font-size: 17px;
 }
 
+.logo {
+    display: block;
+    margin:auto;
+   
+    width:100px;
+    height: 100px;
+}
+
 hr {
     background-color:#635068;
     width:75%;
@@ -71,14 +79,15 @@ h1 {
     padding:5px;
 }
 
-h2, h3, h4 , p{
+h2, h3, h4 , h5, h6{
     font-family: 'Oswald', sans-serif;
     color: #022B3A;
 }
 
-.text {
+p {
   font-family: 'Oswald', sans-serif;
-  font-size:14px;
+  font-size:20px;
+  color: #022B3A;
 }
 
 #about {
@@ -88,6 +97,7 @@ h2, h3, h4 , p{
 
 .button {
     background-color: #71697A; 
+    font-family: 'Oswald', sans-serif;
     color: white;
     text-align: center;
     width:250px;
@@ -111,6 +121,7 @@ li {
 .visitButton {
   color:white;
   background-color:#71697A;
+  font-family: 'Oswald', sans-serif;
 }
 
 .bubble {
