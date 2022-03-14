@@ -1,5 +1,5 @@
 body{
-    background-color: #E1E5F2;
+    background-color: #ffffff;
 }
 
 
@@ -7,7 +7,7 @@ a {
     float: left;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+   
     text-decoration: none;
     font-size: 17px;
 }
@@ -19,22 +19,36 @@ hr {
     height:3px;
 }
 
+.mainbox {
+  background-color:#E1E5F2;
+  margin: auto;
+
+  
+}
+
 .navbar {
-    margin: 0; 
+    margin: auto; 
     padding: 0; 
+    
     background-color: #635068; 
     overflow: hidden;
     font-family:'Noto Serif', serif;
+    display:flex;
+    justify-content: space-around;
+   
+    
 }
 
-.topnav a {
+
+.navbar a {
     float: left;
     display: block;
     color: #ffffff;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 35px;
     text-decoration: none;
     font-size: 17px;
+    margin:auto;
     }
 
 
@@ -42,6 +56,7 @@ hr {
 .navbar a:hover{
     background-color: white;
     color: #71697A;
+   
 }
 
 .navbar .icon {
@@ -49,20 +64,26 @@ hr {
   }
 
 h1 {
-    font-family:'Noto Serif', serif;
+    font-family:'Oswald', sans-serif;
     color: #022B3A;
+    text-align: center;
+    margin: auto;
+    padding:5px;
 }
 
-h2, h3, h4 {
+h2, h3, h4 , p{
     font-family: 'Oswald', sans-serif;
     color: #022B3A;
 }
 
-#about {
-    display: flex;
-    flex-direction: column;
+.text {
+  font-family: 'Oswald', sans-serif;
+  font-size:14px;
 }
 
+#about {
+  color: #264653;
+}
 
 
 .button {
@@ -80,6 +101,24 @@ h2, h3, h4 {
     background-color: #635068;
     color: white;
 
+}
+
+li {
+  font-family: 'Oswald', sans-serif;
+  font-size:20px;
+}
+
+.visitButton {
+  color:white;
+  background-color:#71697A;
+}
+
+.bubble {
+  background-color: #ffffff;
+}
+
+.icons{
+  background-color:#71697A;
 }
 
 /* Referenced from W3 Schools */
