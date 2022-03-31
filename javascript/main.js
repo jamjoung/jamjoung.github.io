@@ -1,3 +1,4 @@
+
 function cookTofu() {
     if (document.getElementById("Tofu").src == "https://cdn.i-scmp.com/sites/default/files/styles/1920x1080/public/d8/images/2020/05/15/tofu-cover.jpg?itok=92kc2uwN") 
         {
@@ -14,6 +15,11 @@ function cookTofu() {
 
   }
 
+
+  document.getElementById("CookButton").addEventListener("click", cookTofu);
+
+
+  
 function openMouth(x) {
     x.src="../img/openPop.jpg"
   }
@@ -21,6 +27,20 @@ function openMouth(x) {
   function closeMouth(x) {
     x.src="../img/closedPop.jpg"
   }
+
+  var cat = document.getElementById("popCat");
+cat.addEventListener("mouseover", openMouth);
+cat.addEventListener("mouseout", closeMouth);
+
+function openMouth()
+{ 
+   cat.src= "../img/openPop.jpg";
+}
+
+function closeMouth()
+{  
+   cat.src= "../img/closedPop.jpg";
+}
 
   //from midterm
   function myFunction() {
