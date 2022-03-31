@@ -113,6 +113,8 @@ p {
 
 }
 
+
+
 li {
   font-family: 'Oswald', sans-serif;
   font-size:20px;
@@ -130,6 +132,19 @@ li {
 
 .icons{
   background-color:#71697A;
+}
+
+.tofuPic {
+  width:500px; 
+  height:350px; 
+  display: block; 
+  
+}
+
+.catImg {
+  width:300px; 
+  height:400px; 
+  display: block; 
 }
 
 /* Referenced from W3 Schools */
