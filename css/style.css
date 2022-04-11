@@ -147,6 +147,16 @@ li {
   display: block; 
 }
 
+.image{
+  max-width: 500px;
+  max-height: 500px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 /* Referenced from W3 Schools */
 @media screen and (max-width: 400px) {
     .navbar a:not(:first-child) {display: none;}
