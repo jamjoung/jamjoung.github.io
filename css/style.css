@@ -152,6 +152,18 @@ li {
   max-height: 500px;
 }
 
+#customName {
+  max-width: 100px;
+}
+
+
+
+#storyBox {
+  background-color: aqua;
+  max-width: 500px;
+  max-height: 500px;
+}
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
