@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -23,7 +24,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="javascript/main.js"></script>
   
 </head>
 
@@ -34,27 +34,32 @@
   <h1>Jamie Joung</h1>
   <br>
   <div class="navbar container" id="topNavbar">
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About me</a>
-    <a href="portfolio.html">Porfolio</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html" class="tabButton">Home</a>
+    <a href="about.html" class="tabButton">About Me</a>
+    <a href="portfolio.html" class="tabButton">Porfolio</a>
+    <a href="contact.html" class="tabButton">Contact</a>
+    <a href="final.html" class="tabButton">Notepad</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
-
   </div>
 
 
 
   <div class="container mainbox">
-    <h1>message board</h1>
-    <div class="header"></div>
-        <textarea></textarea>
-        <button>add comment</button>
-        <div class="comments"></div>
+    <h1>Notepad</h1>
+    <hr>
     
-  </div>
+    <p class="">Need a place to jot down some notes? Type in your message here!</p>
+    <div class="header"></div>
+        <textarea id="textBox"></textarea>
+        <button  id="addNote">Add Note</button>
+        <hr>
+        <ul id="messageLog"></ul>
+        
+  <script defer src="javascript/final.js"></script>
 </body>
+
 
 
 

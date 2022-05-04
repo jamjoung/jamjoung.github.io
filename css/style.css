@@ -48,23 +48,20 @@ hr {
 }
 
 
-.navbar a {
-    float: left;
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 35px;
-    text-decoration: none;
-    font-size: 17px;
-    margin:auto;
-    }
+.tabButton {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 1% 7.17%;
+  text-decoration: none;
+  font-size: 17px;
+ 
+}
 
-
-
-.navbar a:hover{
-    background-color: white;
-    color: #71697A;
-   
+.tabButton:hover {
+  background-color: white;
+  color: #71697A;
 }
 
 .navbar .icon {
@@ -107,12 +104,6 @@ p {
     padding: 20px;
   }
 
-  .button:hover {
-    background-color: #635068;
-    color: white;
-
-}
-
 
 
 li {
@@ -120,11 +111,23 @@ li {
   font-size:20px;
 }
 
+
 .visitButton {
-  color:white;
-  background-color:#71697A;
+  
+  background-color: #635068; 
   font-family: 'Oswald', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  
+  
 }
+.visitButton:hover {
+background-color: #71697A;
+color: white;
+}
+
+
 
 .bubble {
   background-color: #ffffff;
@@ -156,12 +159,73 @@ li {
   max-width: 100px;
 }
 
+.icon {
+  display:flex;
+text-align: center;  
+padding: 10px;
+  color:#022B3A;
+}
+.icon:hover {
+  color: #71697A; 
+}
 
+.center{
+  text-align: center;
+  width:100%;
+}
 
 #storyBox {
   background-color: aqua;
   max-width: 500px;
   max-height: 500px;
+}
+
+.projectImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 100px;
+}
+
+#textBox {
+  float:center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#addNote {
+  
+    background-color: #71697A; 
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-align: center;
+    width:250px;
+    font-size: 16px;
+    border-radius: 9px;
+    margin: 10px;
+    padding: 10px;
+}
+#addNote:hover {
+  background-color: #635068;
+  color: white;
+}
+
+#messageLog {
+  justify-content: center;
+  text-align: center;
+}
+
+#deleteBtn {
+  float:right;
+  color:#71697A;
+}
+#deleteBtn:hover {
+  color: #635068; 
+}
+
+.note {
+  display: inline-block;
+  overflow-wrap: break-word;
 }
 
 @keyframes spin {
@@ -170,30 +234,25 @@ li {
 }
 
 /* Referenced from W3 Schools */
-@media screen and (max-width: 400px) {
-    .navbar a:not(:first-child) {display: none;}
-    .navbar a.icon {
-      float: right;
-      display: block;
-    }
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
   }
+}
 
-  @media screen and (max-width: 400px) {
-    .navbar.responsive {position: relative;}
-    .navbar.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .navbar.responsive a {
-      float: none;
-      display: flex;
-      text-align: left;
-    }
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
-
-  @media screen and (max-width: 400px) {
-    .button {
-      width:auto;
-    }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
   }
+}
